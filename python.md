@@ -128,9 +128,100 @@ Section C — OOP
 16. What are the four pillars of OOP?
 
 Encapsulation
+"Encapsulation is the process of bundling data and methods inside a class and restricting direct access to the internal data."
+eg:
+class BankAccount:
+
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def get_balance(self):
+        return self.__balance
+
+
+account = BankAccount(1000)
+
+account.deposit(500)
+
+print(account.get_balance())
 Abstraction
+Abstraction means hiding complex implementation details and showing only the necessary functionality to the user.
+eg:When you use an ATM:
+
+Insert card
+   ↓
+Enter PIN
+   ↓
+Withdraw money
+
+You don't need to know how the bank's internal transaction system works.
+
+eg :
+from abc import ABC, abstractmethod
+
+
+class Vehicle(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+
+class Car(Vehicle):
+
+    def start(self):
+        print("Car starts with a key")
+
+
+car = Car()
+car.start()
+
 Inheritance
-Polymorphism
+Inheritance allows one class to acquire the properties and methods of another class.
+eg:
+class Animal:
+
+    def eat(self):
+        print("Animal is eating")
+
+
+class Dog(Animal):
+
+    def bark(self):
+        print("Dog is barking")
+
+
+dog = Dog()
+
+dog.eat()
+dog.bark()
+"Inheritance is an OOP concept where a child class inherits attributes and methods from a parent class, allowing code reuse and extension."
+Polymorphism:
+Polymorphism means the same interface or method name can behave differently depending on the object.
+
+In simple words:
+
+Polymorphism = One interface, multiple behaviors.
+class Dog:
+
+    def sound(self):
+        print("Dog barks")
+
+
+class Cat:
+
+    def sound(self):
+        print("Cat meows")
+
+
+dog = Dog()
+cat = Cat()
+
+dog.sound()
+cat.sound()
 
 17. What is a class?
 A class is a blueprint for creating objects.
