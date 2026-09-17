@@ -1,4 +1,6 @@
 ## Top 50 SQL Interview Questions & Answers
+
+```
 🟢 SQL Basics
 1. What is SQL?
 
@@ -27,6 +29,8 @@ CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     name VARCHAR(100)
 );
+
+
 5. What is a foreign key?
 
 Answer:
@@ -34,6 +38,7 @@ A foreign key is a column that creates a relationship between two tables by refe
 
 FOREIGN KEY (department_id)
 REFERENCES departments(department_id)
+
 6. What is the difference between DELETE, DROP, and TRUNCATE?
 
 Answer:
@@ -530,3 +535,4 @@ FROM (
     FROM employees e
 ) x
 WHERE salary > dept_avg_salary;
+```
