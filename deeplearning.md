@@ -1,11 +1,15 @@
 
-  ### Deep Learning — Top 50 Interview Questions & Answers Since you're preparing for AI/ML, Data Scientist, GenAI and Agentic AI roles with ~1 year of experience, these are the 50 Deep Learning questions I recommend preparing. I've kept the answers simple and interview-friendly, with examples where useful.
+  ### Deep Learning — Top 50 Interview Questions & Answers Since you're preparing for AI/ML, 
+  Data Scientist, GenAI and Agentic AI roles with ~1 year of experience,
+  these are the 50 Deep Learning questions I recommend preparing. I've kept the answers 
+  simple and interview-friendly, with examples where useful.
 ```
 🔹 Deep Learning Fundamentals
 1. What is Deep Learning?
 
 Answer:
-Deep Learning is a subset of Machine Learning that uses artificial neural networks with multiple layers to automatically learn patterns from large amounts of data.
+Deep Learning is a subset of Machine Learning that uses artificial neural networks with multiple layers to
+ automatically learn patterns from large amounts of data.
 
 Examples:
 
@@ -80,7 +84,8 @@ GELU
 7. Why do we need activation functions?
 
 Answer:
-Without activation functions, multiple neural network layers would effectively behave like a linear transformation.
+Without activation functions, multiple neural network layers would effectively behave
+like a linear transformation.
 
 Activation functions allow the network to learn complex non-linear relationships.
 
@@ -98,7 +103,8 @@ So:
 x < 0 → 0
 x > 0 → x
 
-It is widely used in hidden layers because it is computationally simple and helps with gradient flow compared with sigmoid/tanh in many networks.
+It is widely used in hidden layers because it is computationally
+simple and helps with gradient flow compared with sigmoid/tanh in many networks.
 
 9. What is the Sigmoid activation function?
 
@@ -139,7 +145,8 @@ Output
 12. What is Backpropagation?
 
 Answer:
-Backpropagation is the process of calculating how much each weight contributed to the error and propagating that error backward through the network.
+Backpropagation is the process of calculating how much each weight contributed to
+the error and propagating that error backward through the network.
 
 The model then uses these gradients to update its weights.
 
@@ -235,7 +242,8 @@ Mini-batch Gradient Descent: Uses a small batch of samples and is commonly used 
 21. What is Overfitting in Deep Learning?
 
 Answer:
-Overfitting occurs when the model learns the training data too closely, including noise, and performs poorly on unseen data.
+Overfitting occurs when the model learns the training data too closely, including noise,
+ and performs poorly on unseen data.
 
 Example:
 
@@ -320,7 +328,8 @@ Shapes
  ↓
 Objects
 
-They also reuse convolutional filters across different image locations, reducing the number of parameters compared with a fully connected network over the whole image.
+They also reuse convolutional filters across different image locations,
+reducing the number of parameters compared with a fully connected network over the whole image.
 
 28. What is Convolution?
 
@@ -420,7 +429,8 @@ It is especially useful when the target dataset is relatively small.
 35. What is Fine-Tuning?
 
 Answer:
-Fine-tuning means taking a pretrained model and training some or all of its layers on a new dataset with a suitable learning rate.
+Fine-tuning means taking a pretrained model and training
+some or all of its layers on a new dataset with a suitable learning rate.
 
 A common approach is:
 
@@ -535,7 +545,8 @@ Key: What information does each token represent for matching?
 
 Value: What information should be passed forward if that token is relevant?
 
-The attention mechanism calculates how strongly each query should attend to different keys and combines the corresponding values.
+The attention mechanism calculates how strongly each query should attend to
+different keys and combines the corresponding values.
 
 45. What is Multi-Head Attention?
 
@@ -559,7 +570,8 @@ Output
 Answer:
 RNNs process sequences step by step, which limits parallelization across sequence positions during training.
 
-Transformers can process all tokens of a sequence in parallel during training, while using attention to model relationships between them.
+Transformers can process all tokens of a sequence in parallel during training,
+while using attention to model relationships between them.
 
 This makes them highly suitable for large-scale training.
 
@@ -613,10 +625,16 @@ Vision Transformers
 
 Answer — interview version:
 
-"First, I understand the business problem and define the target. Then I collect and validate the dataset. I perform preprocessing, 
-  exploratory analysis, and data augmentation if required. I split the data into training, validation, and test sets.
-    Then I select an appropriate architecture such as CNN, LSTM, or Transformer based on the problem. I choose a suitable loss function and optimizer, 
-rain the model, and monitor training and validation metrics. I use techniques such as dropout, regularization, early stopping, or transfer learning to 
-  mprove generalization. After evaluating the model on unseen data, I save the model and deploy it through an API such as FastAPI. For production, I can containerize it with Docker and monitor model and application performance."
+"First, I understand the business problem and define the target.
+Then I collect and validate the dataset. I perform preprocessing, 
+  exploratory analysis, and data augmentation if required.
+I split the data into training, validation, and test sets.
+    Then I select an appropriate architecture such as CNN, LSTM, or Transformer based on the problem.
+ I choose a suitable loss function and optimizer, 
+rain the model, and monitor training and validation metrics.
+ I use techniques such as dropout, regularization, early stopping, or transfer learning to 
+  mprove generalization. After evaluating the model on unseen data,
+ I save the model and deploy it through an API such as FastAPI. For production,
+ I can containerize it with Docker and monitor model and application performance."
 
 ```
