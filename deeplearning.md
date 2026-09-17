@@ -1,8 +1,6 @@
+
+  ### Deep Learning — Top 50 Interview Questions & Answers Since you're preparing for AI/ML, Data Scientist, GenAI and Agentic AI roles with ~1 year of experience, these are the 50 Deep Learning questions I recommend preparing. I've kept the answers simple and interview-friendly, with examples where useful.
 ```
-  Deep Learning — Top 50 Interview Questions & Answers
-
-Since you're preparing for AI/ML, Data Scientist, GenAI and Agentic AI roles with ~1 year of experience, these are the 50 Deep Learning questions I recommend preparing. I've kept the answers simple and interview-friendly, with examples where useful.
-
 🔹 Deep Learning Fundamentals
 1. What is Deep Learning?
 
