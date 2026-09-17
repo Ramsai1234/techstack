@@ -1,3 +1,7 @@
+## python git hub resourses
+
+https://github.com/krishnaik06/Complete-Python-Bootcamp.git
+
 Top 50 Python Interview Questions & Answers 
 Section A: Python Basics (Q1–Q12)
 
