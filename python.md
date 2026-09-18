@@ -244,7 +244,26 @@ __init__() initializes the object after it has been created.
 Inheritance allows a child class to reuse properties and methods of a parent class.
 
 21. What is method overriding?
+Method overriding occurs when a child class provides its own implementation of a method that already exists in the parent class.
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+
+animal = Animal()
+dog = Dog()
+
+animal.sound()
+dog.sound()
 When a child class provides its own implementation of a method inherited from its parent.
+
+method overloading?
+Method overloading means having the same method name with different parameter lists. Python does not support traditional method overloading like Java, but we can achieve similar behavior using default arguments or *args."
 
 22. Does Python support method overloading?
 Python does not support traditional method overloading like Java. Similar behavior can be achieved using default arguments, *args, or **kwargs.
